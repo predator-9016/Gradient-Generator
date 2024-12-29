@@ -9,4 +9,4 @@ Copy Code Functionality: Effortlessly copy the generated CSS code for use in you
 Technologies Used: Built with modern web technologies, ensuring compatibility and performance across devices.
 
 Purpose: Ideal for web developers, designers, and anyone looking to add vibrant gradients to their projects without hassle.
-link of the project file :-  https://peaceful-pasca-acaf91.netlify.app/
+link of the project file :-  https://chaurasiya-gradient-generator.netlify.app/
