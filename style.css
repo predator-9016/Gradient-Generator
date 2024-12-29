@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+
+        *
+        {
+            margin: 0;
+            padding: 0;
+            box-shadow: 0;
+            font-family: 'Urbanist' ;
+        }
+        body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background-image: linear-gradient(to right top, #051937 ,#004d7a,#008792,#00bf72,#a8eb12);
+}
+
+.button-div
+{
+    display: flex;
+    justify-content: center;        
+    align-items: center;
+    margin-top: 20px;
+    
+}
+
+
+    .buttons
+    {
+        width: 5.5rem;
+        /* aspect-ratio: 1; */
+        height: 2.3rem;
+        border-radius: 20px;
+        color:#fff;
+        border: none;
+        padding: 10px;
+        font-weight: bold;
+        margin: 10px;
+    }
+    .buttons:hover{
+        transform: translateY(-5px) scale(1.05); /* Move up and scale slightly */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Add shadow for depth */
+    }
+    #myButton{
+        background-color: #051937;
+    }
+    #myButton2{
+        background-color: #0c8793;
+    }
+    
+    .text
+    {
+        font-size: 0.8rem;
+        text-align: center;
+        color: #fff;
+        font-weight: 400;
+        margin-top: 10px;
+    }
+
+
+    .copyCode {
+    width: 300px;
+    height: 90px;
+    margin-top: 20px;
+    background-color: transparent; /* Make background transparent */
+    border-left: 2px solid #fff; /* Thicker left border */
+    display: flex;
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    border-radius: 10px;
+    position: relative; /* Position relative for pseudo-element */
+    overflow: hidden; /* Hide overflow for pseudo-element */
+    color: #fff;
+    font-weight: 300;
+    padding: 10px ;
+    word-spacing: 2px;
+    letter-spacing: 1px;
+}
+
+.copyCode::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(rgba(5, 25, 55, 0.1), rgba(5, 25, 55, 0.1)); /* Almost invisible gradient overlay */    
+    z-index: 0; /* Send the gradient behind the content */
+    border-radius: 16px; /* Match border radius */
+}
+
+.copyCode > div {
+    position: relative; /* Position relative for content */
+    z-index: 1; /* Bring content above the gradient */
+    padding: 20px; /* Add padding to the content */
+    color: #fff; /* Text color */
+}
